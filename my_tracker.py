@@ -109,7 +109,7 @@ class MyTracker():
 
         # cols, rows = frame.shape[:2]
         x1, y1, width, height = self._update(frame)
-        frame_center: Point = Point(x1 + int(width / 2), y1 + int(height / 2))
+        frame_center: Point = Point(x1, y1)
         obj_size: Size = Size(width * 2, height * 2)
         # direction: Point = frame_center - self._point_to_track
         # step_size_factor = 0.05
